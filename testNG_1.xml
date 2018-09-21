@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="__Test Suite__">
+
+	<test name="InvLoginTests">
+		
+		<classes>
+
+			<class name="tests.InitializeLogging"/>
+			<class name="tests.NegativeLoginTestTestRunner" />
+	
+		</classes>
+	</test> 
+</suite> 

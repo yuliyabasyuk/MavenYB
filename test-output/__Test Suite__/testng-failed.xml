@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [__Test Suite__]">
+  <test thread-count="5" name="InvLoginTests(failed)">
+    <classes>
+      <class name="tests.PositiveLoginTestTestRunnerYB">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="checkLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.PositiveLoginTestTestRunnerYB -->
+    </classes>
+  </test> <!-- InvLoginTests(failed) -->
+</suite> <!-- Failed suite [__Test Suite__] -->

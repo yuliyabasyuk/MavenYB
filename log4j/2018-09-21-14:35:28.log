@@ -1,0 +1,2 @@
+[DEBUG] 2018-09-21 14:35:55 pages.LoginPage:unsuccessfullLogin:253 - Set login data for invalid user
+[DEBUG] 2018-09-21 14:35:58 tests.NegativeLoginTestTestRunner:checkInvLogin:42 - Check debug by logger

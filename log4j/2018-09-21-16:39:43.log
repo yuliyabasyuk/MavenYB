@@ -1,0 +1,6 @@
+[DEBUG] 2018-09-21 16:41:54 pages.LoginPage:setUsernameFieldClear:128 - DEBUG, entered username
+[DEBUG] 2018-09-21 16:41:55 pages.LoginPage:clearPasswordField:137 - DEBUG, cleared passwd field
+[DEBUG] 2018-09-21 16:41:56 pages.LoginPage:setPasswordFieldClear:143 - DEBUG, entered passwd
+[DEBUG] 2018-09-21 16:41:56 pages.LoginPage:clickSignIn:156 - DEBUG, clicked Sign In
+[DEBUG] 2018-09-21 16:41:56 pages.LoginPage:unsuccessfullLogin:253 - Set login data for invalid user
+[DEBUG] 2018-09-21 16:42:00 tests.NegativeLoginTestTestRunner:checkInvLogin:42 - Check debug by logger
