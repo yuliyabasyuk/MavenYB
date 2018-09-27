@@ -6,6 +6,7 @@ import java.util.Date;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+
 import org.testng.annotations.Test;
 
 public class InitializeLogging {
@@ -24,7 +25,7 @@ public class InitializeLogging {
 	@Test
 	public void loggingConfig() {
 		BasicConfigurator.configure();
-		PropertyConfigurator.configure("/Users/olaytar/eclipse-workspace3/MavenYB/src/appl/log4j.properties");
+		PropertyConfigurator.configure("/Users/ybasi/eclipse-workspace/MavenPB2/src/appl/log4j.properties");
 	}
 
 }

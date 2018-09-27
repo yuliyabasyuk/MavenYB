@@ -1,8 +1,6 @@
 package pages;
 
-
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 
@@ -28,10 +26,9 @@ public class PreferencesPage {
 	private IOSElement preferencesAbdBtn;
 
 	// Constructor
-	// public PreferencesPage(IOSDriver<?> ios, WebDriverWait wait) {
-	public PreferencesPage(IOSDriver<?> ios) {
+	public PreferencesPage(IOSDriver<?> ios, WebDriverWait wait) {
 		this.ios = ios;
-//		this.wait = wait;
+		this.wait = wait;
 //		this.preferencesTab = (IOSElement) ios.findElementByAccessibilityId(PREFERENCES_TAB_ID);
 //		this.preferencesPageTitle = (IOSElement) ios.findElementByAccessibilityId(PREFERENCES_PAGE_TITLE_ID);
 //		this.preferencesWeatherGpsBtn = (IOSElement) ios.findElementByAccessibilityId(PREF_WEATHER_GPS_SOURCE__BTN_ID);
@@ -80,20 +77,20 @@ public class PreferencesPage {
 	
 	// Methods 
 	public void clickPreferencesTab() {
-		//System.out.println("in the  \'clickPreferencesTab()\'");
+		System.out.println("in the  \'clickPreferencesTab()\'");
 		getPreferencesTab().click();
 	}
 	
 	public void clickPreferencesAccountBtn() {
-		//System.out.println("in the  \'clickPreferencesAccountBtn()\'");
+		System.out.println("in the  \'clickPreferencesAccountBtn()\'");
 		getPreferencesAccountBtn().click();
 	}
 	
 	// Functional
 	public AccountPage getAccountPage() {
-		//System.out.println("in the \' AccountPage getAccountPage() \'");
+		System.out.println("in the \' AccountPage getAccountPage() \'");
 		clickPreferencesAccountBtn();
-		return new AccountPage(ios);
+		return new AccountPage(ios, wait);
 	}
 	
 	// Business logic

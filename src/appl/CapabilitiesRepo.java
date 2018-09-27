@@ -35,7 +35,7 @@ public class CapabilitiesRepo {
 		if (deviceName.equals("Simulator")) {
 			capabilities = CapabilitiesRepo.get().SetSimulatorCapabilities();
 		} else {
-			if (deviceName.equals("PB2141IPadMini")) {
+			if (deviceName.equals("iPadMini")) {
 				capabilities = CapabilitiesRepo.get().SetIPadMiniCapabilities();
 			}
 

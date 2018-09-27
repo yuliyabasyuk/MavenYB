@@ -70,7 +70,7 @@ public class Application {
 	private static volatile Application instance;
 
 	// Fields
-	private static IOSDriver<?> ios;
+	private IOSDriver<?> ios;
 	private AppSources appSources;
 
 	// Constructor
@@ -149,7 +149,7 @@ public class Application {
 		}
 	}
 
-	public static IOSDriver<?> getApp() {
+	public IOSDriver<?> getApp() {
 		// TODO For parallel work
 		return ios;
 	}
@@ -162,7 +162,7 @@ public class Application {
 	 * which app to start in using fabric method pattern
 	 */
 	private void initIOSDriver() {
-		Apps currentApp = Apps.IPAD_MINI;
+		Apps currentApp = Apps.SIMULATOR;
 		// for (Apps app : Apps.values()) {
 		// if
 		// (app.toString().toLowerCase().contains(getAppSources().getApplicationName().toLowerCase()))

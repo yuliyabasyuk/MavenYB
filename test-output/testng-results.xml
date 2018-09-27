@@ -1,65 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="__Test Suite__" duration-ms="230534" started-at="2018-09-27T13:23:24Z" finished-at="2018-09-27T13:27:14Z">
+  <suite name="__Test Suite__" duration-ms="137828" started-at="2018-09-21T13:39:43Z" finished-at="2018-09-21T13:42:01Z">
     <groups>
     </groups>
-    <test name="InvLoginTests" duration-ms="230534" started-at="2018-09-27T13:23:24Z" finished-at="2018-09-27T13:27:14Z">
-      <class name="tests.PositiveLoginTestTestRunnerYB">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.PositiveLoginTestTestRunnerYB@df27fae]" name="beforeClass" is-config="true" duration-ms="58709" started-at="2018-09-27T13:23:24Z" finished-at="2018-09-27T13:24:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="checkLogin(data.IUser)[pri:0, instance:tests.PositiveLoginTestTestRunnerYB@df27fae]" name="checkLogin" duration-ms="93820" started-at="2018-09-27T13:24:22Z" data-provider="TestUsers" finished-at="2018-09-27T13:25:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[data.User@27d4a09]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkLogin -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.PositiveLoginTestTestRunnerYB@df27fae]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-27T13:24:22Z" finished-at="2018-09-27T13:24:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.PositiveLoginTestTestRunnerYB@df27fae]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-09-27T13:25:56Z" finished-at="2018-09-27T13:25:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.PositiveLoginTestTestRunnerYB@df27fae]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-27T13:25:56Z" finished-at="2018-09-27T13:25:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkLogin(data.IUser)[pri:0, instance:tests.PositiveLoginTestTestRunnerYB@df27fae]" name="checkLogin" duration-ms="77820" started-at="2018-09-27T13:25:56Z" data-provider="TestUsers" finished-at="2018-09-27T13:27:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[data.User@3088660d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.PositiveLoginTestTestRunnerYB@df27fae]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-09-27T13:27:14Z" finished-at="2018-09-27T13:27:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.PositiveLoginTestTestRunnerYB@df27fae]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-09-27T13:27:14Z" finished-at="2018-09-27T13:27:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- tests.PositiveLoginTestTestRunnerYB -->
+    <test name="InvLoginTests" duration-ms="137828" started-at="2018-09-21T13:39:43Z" finished-at="2018-09-21T13:42:01Z">
       <class name="tests.InitializeLogging">
-        <test-method status="PASS" signature="loggingConfig()[pri:0, instance:tests.InitializeLogging@704921a5]" name="loggingConfig" duration-ms="134" started-at="2018-09-27T13:23:24Z" finished-at="2018-09-27T13:23:24Z">
+        <test-method status="PASS" signature="loggingConfig()[pri:0, instance:tests.InitializeLogging@43738a82]" name="loggingConfig" duration-ms="68" started-at="2018-09-21T13:39:43Z" finished-at="2018-09-21T13:39:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggingConfig -->
       </class> <!-- tests.InitializeLogging -->
+      <class name="tests.NegativeLoginTestTestRunner">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.NegativeLoginTestTestRunner@c81cdd1]" name="beforeClass" is-config="true" duration-ms="54439" started-at="2018-09-21T13:39:43Z" finished-at="2018-09-21T13:40:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.NegativeLoginTestTestRunner@c81cdd1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-09-21T13:40:37Z" finished-at="2018-09-21T13:40:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkInvLogin(data.IUser)[pri:0, instance:tests.NegativeLoginTestTestRunner@c81cdd1]" name="checkInvLogin" duration-ms="83273" started-at="2018-09-21T13:40:37Z" data-provider="invTestUsers" finished-at="2018-09-21T13:42:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[data.User@466276d8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkInvLogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.NegativeLoginTestTestRunner@c81cdd1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-09-21T13:42:01Z" finished-at="2018-09-21T13:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.NegativeLoginTestTestRunner@c81cdd1]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-09-21T13:42:01Z" finished-at="2018-09-21T13:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.NegativeLoginTestTestRunner -->
     </test> <!-- InvLoginTests -->
   </suite> <!-- __Test Suite__ -->
 </testng-results>
