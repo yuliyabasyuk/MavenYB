@@ -5,10 +5,9 @@
 	<test name="InvLoginTests">
 		
 		<classes>
-
 			<class name="tests.InitializeLogging"/>
-			<class name="tests.NegativeLoginTestTestRunner" />
-	
+			<!-- <class name="tests.NegativeLoginTestTestRunner" />  -->
+			<class name="tests.PositiveLoginTestTestRunner" />
 		</classes>
 	</test> 
 </suite> 

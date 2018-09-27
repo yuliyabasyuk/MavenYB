@@ -22,10 +22,10 @@ public class AccountPage {
 	
 		
 		// Constructor
-		public AccountPage(IOSDriver<?> ios, WebDriverWait wait) {
-		//public AccountPage(IOSDriver<?> ios) {
+		//public AccountPage(IOSDriver<?> ios, WebDriverWait wait) {
+		public AccountPage(IOSDriver<?> ios) {
 			this.ios = ios;
-			this.wait = wait;
+//			this.wait = wait;
 //			this.accountPage = (IOSElement) ios.findElementByAccessibilityId(ACCOUNT_PAGE_ID);
 //			this.back2PreferencesBtn = (IOSElement) ios.findElementByAccessibilityId(BACK_2_PREFERENCES_BTN_ID);
 //			this.signOutBtn = (IOSElement) ios.findElementByAccessibilityId(SIGN_OUT_BTN_ID);
@@ -56,22 +56,21 @@ public class AccountPage {
 		}
 		
 		public void clickSignOutBtn() {
-			System.out.println("in the \'clickSignOutBtn() \' ");
+			//System.out.println("in the \'clickSignOutBtn() \' ");
 			getSignOutBtn().click();
 		}
 		
 		// Functional
-		
 		public PreferencesPage back2Preferences() {
-			System.out.println("in the \'back2Preferences()\'");
+			//System.out.println("in the \'back2Preferences()\'");
 			 clickBack2Preferences();
-			 return new PreferencesPage(ios, wait);
+			 return new PreferencesPage(ios);
 		}
 		
 		public LoginPage logout() {
-			System.out.println("in the \' LoginPage logout()\'");
+			//System.out.println("in the \' LoginPage logout()\'");
 			clickSignOutBtn();
-			System.out.println("after call to the \'clickSignOutBtn(); \'");
-			return new LoginPage(ios, wait);
+			//System.out.println("after call to the \'clickSignOutBtn(); \'");
+			return new LoginPage(ios);
 		}
 }

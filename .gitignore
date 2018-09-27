@@ -1,0 +1,23 @@
+/target/
+*.ipa
+
+*.bin
+*.log
+
+# Single Module Project
+/target/
+/bin/
+/build/
+/doc/
+/test-output/
+/report/
+/reports/
+
+# Multi Modules Project
+/**/target/
+/**/doc/
+/**/bin/
+/**/build/
+/**/test-output/
+/**/report/
+/**/reports

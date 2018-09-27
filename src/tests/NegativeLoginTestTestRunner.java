@@ -22,8 +22,8 @@ public class NegativeLoginTestTestRunner extends TestRunner {
 	@DataProvider
 	public Object[][] invTestUsers() {
 		return new Object[][] { 
-				{ UserRepository.get().dfrInvUser22Login() }//,
-				//{ UserRepository.get().dfrInvUser23Login() }
+				{ UserRepository.get().dfrInvUser22Login() },
+				{ UserRepository.get().dfrInvUser23Login() }
 				};
 	}
 	
@@ -33,11 +33,9 @@ public class NegativeLoginTestTestRunner extends TestRunner {
 		//logger.info("Start");
 		
 		// Precondition.
-		//
-		// Test steps.
-		System.out.println("Debug - user: " + user);
 		
-		LoginPage loginPage = Application.get().load().unsuccessfullLogin(user);
+		// Test steps.
+		LoginPage loginPage = Application.get().load().unsuccessfullLoginDevice(user);
 		InitializeLogging.getLogger().debug("LoginPage object: " + loginPage);
 		InitializeLogging.getLogger().debug("Check debug by logger");
 		
@@ -57,7 +55,6 @@ public class NegativeLoginTestTestRunner extends TestRunner {
 			// e.printStackTrace();
 		}
 		
-	
 	}
 
 }

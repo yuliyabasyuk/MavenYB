@@ -9,7 +9,7 @@
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
-          <include name="checkLogin" invocation-numbers="0"/>
+          <include name="checkLogin" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- tests.PositiveLoginTestTestRunnerYB -->
     </classes>

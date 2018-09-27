@@ -1,6 +1,6 @@
 package pages;
 
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.ios.IOSDriver;
@@ -121,6 +121,7 @@ public class MapPage {
 	
 	public void clickABDpopupOKbtn() {
 		getABDpopupOKbtn().click();
+		System.out.println("Debug: in the \'clickABDpopupOKbtn()\' after click() ");
 	}
 	
 	public void clickCoachMarksCloseBtn() {
@@ -150,7 +151,6 @@ public class MapPage {
 //	}
 	
 	public boolean safeClick(IOSDriver<?> driver, WebDriverWait wait, IOSElement getElement) {
-		System.out.println("DEBUG, in the safeClick");
 		boolean state = false;
 		if ((getElement != null) && getElement.isEnabled()) {
 			state = true;
@@ -161,7 +161,6 @@ public class MapPage {
 	}
 	
 	public void dismissGpsAlert() {
-		System.out.println("DEBUG, in the dismissGpsAlert()");
 		if (safeClick(ios, wait, getGpsPopup())) {
 			ios.switchTo().alert().dismiss();
 			System.out.println("dismissed the gpsPopup");
@@ -169,7 +168,6 @@ public class MapPage {
 	}
 	
 	public void dismissApnsAlert() {
-		System.out.println("DEBUG, in the dismissApnsAlert()");
 		if (safeClick(ios, wait, getApnsPopup())) {
 			ios.switchTo().alert().dismiss();
 			System.out.println("dismissed the apnsPopup");
@@ -177,16 +175,21 @@ public class MapPage {
 	}
 	
 	// close Automatic Basemaps Downloads popup
-	public void closeABDpopup() {
-		System.out.println("In the \'closeABDpopup\'");
+	public CoachMarkPage closeABDpopup() {
 		//setABDpopupToggle();
 		clickABDpopupOKbtn();
+		return new CoachMarkPage(ios);
 	}
 	
 	public void closeCoachMarksPage() {
-		System.out.println("In the \'closeCoachMarksPage()'");
+		//System.out.println("In the \'closeCoachMarksPage()\' ");
 		clickCoachMarksCloseBtn();
 	} 
+	
+	public PreferencesPage clickPreferences() {
+		//System.out.println("In the \' clickPreferences()\' ");
+		return new PreferencesPage(ios);
+	}
 	
 //	// Business logic
 //	public LoginPage logout() throws InterruptedException {

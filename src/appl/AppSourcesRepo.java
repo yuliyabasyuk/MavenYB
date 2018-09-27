@@ -26,8 +26,8 @@ public final class AppSourcesRepo { 		// final - don't allow to extend this clas
 		try {
 			URL remote = new RemoteServerURL().getRemoteURL();
 			System.out.println("Debug - Remote url: " + remote);
-			return new AppSources.AppSourcesBuilder(remote, CapabilitiesRepo.get().SetCapabilities("Simulator"))
-								.implicitTimeOut(30000)
+			return new AppSources.AppSourcesBuilder(remote, CapabilitiesRepo.get().SetCapabilities("PB2141IPadMini"))
+								.implicitTimeOut(18)
 								.build();	
 		}
 		catch (Exception e) {

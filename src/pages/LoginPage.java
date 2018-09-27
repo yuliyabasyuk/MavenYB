@@ -214,16 +214,18 @@ public class LoginPage {
 	}*/
 	
 	//rewrite setLoginData method
-	public void setLoginData(IUser user) throws InterruptedException {
+	public void setLoginDataDevice(IUser user) throws InterruptedException {
 		setUsernameFieldClear(user.getUsername());
 		setPasswordFieldClear(user.getPassword());
-		//closeKeyabord();
+		closeKeyabord();
 		clickSignIn();
-		//Thread.sleep(1000);
-		//System.out.println("DEBUG, in the setLoginData ");
-		
 	}
 	
+	public void setLoginDataSimulator(IUser user) throws InterruptedException {
+		setUsernameFieldClear(user.getUsername());
+		setPasswordFieldClear(user.getPassword());
+		clickSignIn();
+	}
 //	
 //	public MapPage successLogin(IUser validUserCred) throws Exception {
 //		setLoginData(validUserCred);
@@ -237,24 +239,30 @@ public class LoginPage {
 	
 	//WebDriverWait wait1 = new WebDriverWait(ios, 10);
 	//commented MapPage return
-	public MapPage successLogin(IUser validUserCred) throws Exception {
-		// commented today 
-		setLoginData(validUserCred);
-
+	public MapPage successLoginDevice(IUser validUserCred) throws Exception {
+		setLoginDataDevice(validUserCred);
+		InitializeLogging.getLogger().debug("Set login data for valid user");
+		
+		
+		
+		return new MapPage(ios);
+	}
+	public MapPage successLoginSimulator(IUser validUserCred) throws Exception {
+		setLoginDataSimulator(validUserCred);
+		InitializeLogging.getLogger().debug("Set login data for valid user");
 		return new MapPage(ios);
 	}
 	
-//	public ValidatorLoginPage unsuccessfullLogin(String username, String password) throws Exception {
-//		setLoginData(username, password);
-//		return new ValidatorLoginPage(ios, wait); //return this
-//	}
-	public ValidatorLoginPage unsuccessfullLogin(IUser invalidUser) throws Exception {
-		setLoginData(invalidUser);
+	public ValidatorLoginPage unsuccessfullLoginDevice(IUser invalidUser) throws Exception {
+		setLoginDataDevice(invalidUser);
 		InitializeLogging.getLogger().debug("Set login data for invalid user");
 		return new ValidatorLoginPage(ios); //return this
 	}
 	
-
-	
+	public ValidatorLoginPage unsuccessfullLoginSimulator(IUser invalidUser) throws Exception {
+		setLoginDataSimulator(invalidUser);
+		InitializeLogging.getLogger().debug("Set login data for invalid user");
+		return new ValidatorLoginPage(ios); //return this
+	}
 	
 }

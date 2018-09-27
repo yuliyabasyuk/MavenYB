@@ -20,7 +20,7 @@ public class AppSources {
 	// Fields
 		
 	private URL serverURL; 		
-	private DesiredCapabilities capabilities = CapabilitiesRepo.get().SetCapabilities("Simulator");	
+	private DesiredCapabilities capabilities = CapabilitiesRepo.get().SetCapabilities("PB2141IPadMini");	
 	private long implicitTimeOut;
 	
 	
@@ -111,7 +111,7 @@ public class AppSources {
 		}
 		
 		public AppSources build() {
-			return new AppSources(this);
+			return new AppSources(this); // here wrong UDID
 		}
 	}
 
