@@ -1,6 +1,8 @@
 /target/
 *.ipa
 
+*.DS_Store
+
 *.bin
 *.log
 
